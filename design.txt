@@ -1,0 +1,62 @@
+
+
+MAIN PAGE
+  -SUBJECT OR TOPIC LIST
+    -jump to topic page
+  -MAKE A NEW SUBJECT
+    -make a title
+
+TOPIC MAIN PAGE
+  -NAME OF TOPIC + SEARCH
+    -list of links to docs - external links
+    -list of subheadings - jump to
+    -list of tags - jump to
+  -MAKE AN ENTRY FORM
+    -TITLE - R
+    -SUBHEADING - R use existing or create new
+    -TAGS - R
+    -SNIPPIT
+      - description R
+      - link to source O
+    -RELATED LINKS
+      -O
+
+SUBHEADING PAGE
+  -TAGS LIST - jump to
+  -DISPLAY ALL BY SubTopicING - alphabetical
+    -ENTRIES - alphabetical
+
+ENTRY
+  -TITLE + additional tags
+  -SNIPPIT
+    snippet description
+    related link / source
+  -ADDITIONAL LINKS
+
+//////////////////////////////////////////////////////
+
+MODELS -
+
+TOPIC
+  -TITLE
+  -LINKS TO DOCS
+
+SubTopic - BELONGS TO TOPIC
+  -TITLE
+  -SUBJECT ID
+
+ENTRY - BELONGS TO A SubTopic, HAS A SNIPPET, HAS MANY TAGS
+  -TITLE
+  -SubTopic ID
+  -RELATED TAG IDS
+  -SNIPPIT
+
+
+SNIPPIT -
+  -CODE SNIPPIT OR PICTURE
+  -DESCRIPTION
+  -SOURCE
+  -ENTRY ID
+
+TAGS -
+  -TEXT
